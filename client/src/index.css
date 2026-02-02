@@ -15,11 +15,11 @@
   --popover: 222 47% 11%;
   --popover-foreground: 210 40% 98%;
   
-  --primary: 45 93% 47%;         /* Gold/Amber for luxury/premium feel */
-  --primary-foreground: 222 47% 11%;
+  --primary: 173 58% 39%;         /* Teal for medical/clean accent */
+  --primary-foreground: 210 40% 98%;
   
-  --secondary: 173 58% 39%;      /* Teal for medical/clean accent */
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 45 93% 47%;      /* Gold/Amber for luxury/premium feel (swapped from primary) */
+  --secondary-foreground: 222 47% 11%;
   
   --muted: 217 33% 17%;
   --muted-foreground: 215 20% 65%;

@@ -22,10 +22,9 @@ export function AboutSection() {
             className="relative"
           >
             <div className="relative aspect-[3/4] md:aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
-              <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10" />
-              {/* Unsplash image: Female doctor portrait looking professional and kind */}
+              <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10" />
               <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop" 
+                src="/attached_assets/images_(19)_1770065308992.jpeg" 
                 alt="Dr. Madhulika Singh" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />

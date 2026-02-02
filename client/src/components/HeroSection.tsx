@@ -8,9 +8,8 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/40 z-10" />
-        {/* Unsplash image: Modern luxury dental clinic interior */}
         <img 
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop" 
+          src="/attached_assets/2025-12-05_1770065327796.webp" 
           alt="Modern Dental Clinic" 
           className="w-full h-full object-cover object-center opacity-60"
         />
