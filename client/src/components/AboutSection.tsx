@@ -24,7 +24,7 @@ export function AboutSection() {
             <div className="relative aspect-[3/4] md:aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
               <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10" />
               <img 
-                src="/attached_assets/images_(19)_1770065308992.jpeg" 
+                src="/doctor.jpeg" 
                 alt="Dr. Madhulika Singh" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />

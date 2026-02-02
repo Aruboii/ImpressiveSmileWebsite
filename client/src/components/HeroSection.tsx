@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/40 z-10" />
         <img 
-          src="/attached_assets/2025-12-05_1770065327796.webp" 
+          src="/clinic.webp" 
           alt="Modern Dental Clinic" 
           className="w-full h-full object-cover object-center opacity-60"
         />
