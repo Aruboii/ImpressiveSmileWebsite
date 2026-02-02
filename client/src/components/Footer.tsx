@@ -32,14 +32,8 @@ export function Footer() {
               We are dedicated to creating healthy, beautiful smiles for you and your family.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
+              <a href="https://www.instagram.com/impressivesmileclinic?igsh=MXZ1aHA4MXI0NG9qOQ==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>

@@ -41,8 +41,8 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createService(insertService: InsertService): Promise<Service> {
-    const [service] = await db.insert(services).values(insertService).returning();
-    return service;
+    const [newService] = await db.insert(services).values(insertService).returning();
+    return newService;
   }
 }
 
