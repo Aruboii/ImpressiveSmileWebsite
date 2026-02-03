@@ -3,33 +3,33 @@ import { api } from "@shared/routes";
 
 export function useReviews() {
   return useQuery({
-    queryKey: [api.reviews.list.path],
+    queryKey: ["/reviews.json"],
     queryFn: async () => {
-      const res = await fetch(api.reviews.list.path);
+      const res = await fetch("/reviews.json");
       if (!res.ok) throw new Error("Failed to fetch reviews");
-      return api.reviews.list.responses[200].parse(await res.json());
+      return await res.json();
     },
   });
 }
 
 export function useFaqs() {
   return useQuery({
-    queryKey: [api.faqs.list.path],
+    queryKey: ["/faqs.json"],
     queryFn: async () => {
-      const res = await fetch(api.faqs.list.path);
+      const res = await fetch("/faqs.json");
       if (!res.ok) throw new Error("Failed to fetch FAQs");
-      return api.faqs.list.responses[200].parse(await res.json());
+      return await res.json();
     },
   });
 }
 
 export function useServices() {
   return useQuery({
-    queryKey: [api.services.list.path],
+    queryKey: ["/services.json"],
     queryFn: async () => {
-      const res = await fetch(api.services.list.path);
+      const res = await fetch("/services.json");
       if (!res.ok) throw new Error("Failed to fetch services");
-      return api.services.list.responses[200].parse(await res.json());
+      return await res.json();
     },
   });
 }
