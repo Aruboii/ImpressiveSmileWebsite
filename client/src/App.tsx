@@ -1,29 +1,31 @@
-import { Switch, Route } from "wouter";
-import { queryClient } from "./lib/queryClient";
+import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 
-function Router() {
+const BASE_PATH = "/ImpressiveSmileWebsite";
+
+function AppRouter() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
+      <Route path={`${BASE_PATH}/`} component={Home} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-function App() {
+export default function App(): JSX.Element {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router />
+        <WouterRouter base={BASE_PATH}>
+          <AppRouter />
+        </WouterRouter>
       </TooltipProvider>
     </QueryClientProvider>
   );
 }
-
-export default App;
